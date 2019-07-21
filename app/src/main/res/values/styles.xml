@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--设置bar颜色-->
+        <item name="colorPrimaryDark">@color/mainColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <!--优先级更高，5.0以下版本会出现警告，api要21以上才行-->
+        <!--<item name="android:statusBarColor">@android:color/black</item>-->
+    </style>
+    <style name="AnimationActivity" parent="android:Animation.Activity">
+        <!--打开activity,新进入的activity所执行的动画-->
+        <item name="android:activityOpenEnterAnimation">@anim/open_enter</item>
+        <!--打开activity时，原activity所执行的动画-->
+        <item name="android:activityOpenExitAnimation">@anim/open_exit</item>
+        <!--退出的activity所执行的动画-->
+        <item name="android:activityCloseExitAnimation">@anim/close_exit</item>
+        <!--退出的activity时，重新显示的activity所执行的动画-->
+        <item name="android:activityCloseEnterAnimation">@anim/close_enter</item>
+
+    </style>
+
+    <!--分割线-->
+    <style name="line">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/lineColor</item>
+        <item name="android:layout_margin">@dimen/marginSize</item>
+    </style>
+
+    <style name="commitBtn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btnHeight</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/titleSize</item>
+        <item name="android:layout_marginLeft">@dimen/marginSize</item>
+        <item name="android:layout_marginRight">@dimen/marginSize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_commit_select</item>
+    </style>
+
+
+</resources>

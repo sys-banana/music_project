@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--设置bar颜色-->
+        <item name="colorPrimaryDark">@color/mainColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <!--优先级更高，5.0以下版本会出现警告，api要21以上才行,现在所在的文件只有在api21以上才会执行的意思-->
+        <!--<item name="android:statusBarColor">@android:color/black</item>-->
+    </style>
+
+</resources>
