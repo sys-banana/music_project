@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.zhuang.zzmusicdemo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".base.MyApplication"
         android:allowBackup="true"
@@ -17,11 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activitys.MainActivity"/>
-        <activity android:name=".activitys.login.LoginActivity"/>
+        <activity android:name=".activitys.MainActivity" />
+        <activity android:name=".activitys.login.LoginActivity" />
         <activity android:name=".activitys.login.register.RegisterActivity" />
         <activity android:name=".activitys.percenter.MeActivity" />
-
+        <activity android:name=".activitys.login.ChangePasswordActivity" />
+        <activity android:name=".activitys.musiclist.AlbumListActivity" />
+        <activity android:name=".activitys.musicrun.PlayMusicActivity"></activity>
     </application>
 
 </manifest>

@@ -1,10 +1,12 @@
 package com.example.zhuang.zzmusicdemo.activitys.percenter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
 import com.example.zhuang.zzmusicdemo.R;
+import com.example.zhuang.zzmusicdemo.activitys.login.ChangePasswordActivity;
 import com.example.zhuang.zzmusicdemo.base.BaseActivity;
 import com.example.zhuang.zzmusicdemo.util.UserUtils;
 
@@ -26,7 +28,8 @@ public class MeActivity extends BaseActivity {
      * @param view
      */
     public void onChangeClick(View view){
-
+        Intent intent = new Intent(this,ChangePasswordActivity.class);
+        startActivity(intent);
     }
 
     /**

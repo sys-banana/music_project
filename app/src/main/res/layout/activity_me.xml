@@ -22,7 +22,7 @@
         android:textSize="@dimen/infoSize"
         android:paddingLeft="@dimen/marginSize"
         android:gravity="center_vertical"
-        android:onClick="onChange"
+        android:onClick="onChangeClick"
         android:background="@drawable/item_commit_select"/>
 
     <Button
